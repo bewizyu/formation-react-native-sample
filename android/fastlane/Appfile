@@ -1,0 +1,2 @@
+json_key_file "~/Workspaces/Formations/Google\ Play\ Android\ Developer-91853da93ef0.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "com.reactnativesample" # e.g. com.krausefx.app

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ReactNativeSampleTests.xctest' tests='2' failures='2'>
+  <testsuite name='ReactNativeSampleTests' tests='2' failures='2'>
+    <testcase classname='ReactNativeSampleTests' name='testRendersWelcomeScreen'>
+      <failure message='((redboxError) == nil) failed: &quot;Unhandled JS Exception: Module AppRegistry is not a registered callable module (calling runApplication)&quot; - RedBox error: Unhandled JS Exception: Module AppRegistry is not a registered callable module (calling runApplication)'>ReactNativeSampleTests/ReactNativeSampleTests.m:65</failure>
+    </testcase>
+    <testcase classname='ReactNativeSampleTests' name='testRendersWelcomeScreen'>
+      <failure message='((foundElement) is true) failed - Couldn&apos;t find element with text &apos;Welcome to React Native!&apos; in 600 seconds'>ReactNativeSampleTests/ReactNativeSampleTests.m:66</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
