@@ -108,7 +108,7 @@ export default class HomeScreen extends Component {
         <View style={styles.margin}>
           <Button
             onPress={() => {
-              throw new Error('Generate error on touch button');
+              console.log('FIX SENTRY ERROR');
             }}
             title="Throw error"
           />
