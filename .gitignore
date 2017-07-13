@@ -55,3 +55,5 @@ coverage
 .scannerwork
 /android/fastlane/README.md
 /android/fastlane/report.xml
+/ios/fastlane/README.md
+/ios/fastlane/report.xml
