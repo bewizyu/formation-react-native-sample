@@ -6,12 +6,15 @@ import {
   View,
 } from 'react-native';
 import { Sentry, SentrySeverity } from 'react-native-sentry';
+import Config from 'react-native-config';
 
 import Info from '../components/Info';
 
 import { GREETINGS_SCENE_NAME } from '../screens/GreetingsScreen';
 import { JSX_SCENE_NAME } from '../screens/JsxScreen';
 import { STATE_SCENE_NAME } from '../screens/StateScreen';
+
+Sentry.config('https://1254c1c9a05f443db1f9a44457fdd6f2:8605db276da7457aa4d927752782df0c@sentry.io/189650').install();
 
 Sentry.setTagsContext({
   environment: 'production',
@@ -49,6 +52,10 @@ export default class HomeScreen extends Component {
     this.navigateToGreetings = this.navigateToGreetings.bind(this);
     this.navigateToJsx = this.navigateToJsx.bind(this);
     this.navigateToState = this.navigateToState.bind(this);
+  }
+
+  componentDidMount() {
+    console.log('CONFIGURATION', Config.API_URL);
   }
 
   navigateToGreetings() {
