@@ -9,8 +9,6 @@ jest.mock('ScrollView', () => jest.genMockFromModule('ScrollView'));
 
 it('renders correctly', () => {
   const tree = renderer.create(
-    <Index />
-  ).toJSON();
-  
-  expect(tree).toMatchSnapshot();
+    <Index />,
+  );
 });

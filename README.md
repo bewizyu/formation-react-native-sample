@@ -2,4 +2,4 @@
 
 ## Description
 
-This a a react native sample project for training.  
+This a a react native sample project for training.
