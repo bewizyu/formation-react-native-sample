@@ -57,3 +57,4 @@ coverage
 /android/fastlane/report.xml
 /ios/fastlane/README.md
 /ios/fastlane/report.xml
+/ios/ReactNativeSample.app.dSYM.zip
