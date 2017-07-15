@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import { Text, View, Button, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -7,25 +7,22 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Greeting extends Component {
-  render() {
-    return (
-
-      <View>
-        <Text>Hello {this.props.name}!</Text>
-        <View style={styles.margin}>
-          <Button
-            onPress={() => {
-              this.props.handleFunction({
-                name: this.props.name,
-              });
-            }}
-            title="Click me"
-          />
-        </View>
+export default function Greeting() {
+  return (
+    <View>
+      <Text>Hello {this.props.name}!</Text>
+      <View style={styles.margin}>
+        <Button
+          onPress={() => {
+            this.props.handleFunction({
+              name: this.props.name,
+            });
+          }}
+          title="Click me"
+        />
       </View>
-    );
-  }
+    </View>
+  );
 }
 
 Greeting.defaultProps = {

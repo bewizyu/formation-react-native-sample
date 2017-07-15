@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
   ScrollView,
   Button,
@@ -75,3 +75,9 @@ export default class HomeScreen extends Component {
     );
   }
 }
+
+HomeScreen.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.any.isRequired,
+  }).isRequired,
+};
