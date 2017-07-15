@@ -71,6 +71,15 @@ export default class HomeScreen extends Component {
             title="State"
           />
         </View>
+
+        <View style={styles.margin}>
+          <Button
+            onPress={() => {
+              throw new Error('Test Buddybuild Crash');
+            }}
+            title="Crash"
+          />
+        </View>
       </ScrollView>
     );
   }
