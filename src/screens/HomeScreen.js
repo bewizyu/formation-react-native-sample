@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
   ScrollView,
   Button,
   StyleSheet,
   View,
+  Alert,
 } from 'react-native';
 import { Sentry, SentrySeverity } from 'react-native-sentry';
 import Config from 'react-native-config';
@@ -55,7 +56,7 @@ export default class HomeScreen extends Component {
   }
 
   componentDidMount() {
-    console.log('CONFIGURATION', Config.API_URL);
+    Alert.alert(Config.API_URL);
   }
 
   navigateToGreetings() {
@@ -115,7 +116,7 @@ export default class HomeScreen extends Component {
         <View style={styles.margin}>
           <Button
             onPress={() => {
-              console.log('FIX SENTRY ERROR');
+              throw new Error('Error Sentry test');
             }}
             title="Throw error"
           />
@@ -124,3 +125,9 @@ export default class HomeScreen extends Component {
     );
   }
 }
+
+HomeScreen.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.any.isRequired,
+  }).isRequired,
+};

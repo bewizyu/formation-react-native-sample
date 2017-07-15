@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { View } from 'react-native';
+import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
 import HomeScreen, { HOME_SCENE_NAME } from './screens/HomeScreen';

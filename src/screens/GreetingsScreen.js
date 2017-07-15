@@ -4,6 +4,8 @@ import GreetingsList from '../components/GreetingsList';
 
 export const GREETINGS_SCENE_NAME = 'GREETINGS_SCENE';
 
+const GRAY = 'gray';
+
 const styles = StyleSheet.create({
   constainer: {
     flex: 1,
@@ -14,7 +16,7 @@ const styles = StyleSheet.create({
   newName: {
     height: 40,
     width: '80%',
-    borderColor: 'gray',
+    borderColor: GRAY,
   },
   addName: {
     height: 40,
