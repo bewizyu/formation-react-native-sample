@@ -7,15 +7,15 @@ const styles = StyleSheet.create({
   },
 });
 
-export default function Greeting() {
+export default function Greeting(props) {
   return (
     <View>
-      <Text>Hello {this.props.name}!</Text>
+      <Text>Hello {props.name}!</Text>
       <View style={styles.margin}>
         <Button
           onPress={() => {
-            this.props.handleFunction({
-              name: this.props.name,
+            props.handleFunction({
+              name: props.name,
             });
           }}
           title="Click me"
@@ -29,7 +29,7 @@ Greeting.defaultProps = {
   name: 'Default value',
 };
 
-Greeting.propType = {
-  name: PropTypes.string,
-  handleFunction: PropTypes.func.required,
+Greeting.propTypes = {
+  name: PropTypes.string.isRequired,
+  handleFunction: PropTypes.func.isRequired,
 };

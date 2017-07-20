@@ -1,0 +1,8 @@
+start_test_server_in_background
+query("button")
+query 
+query *
+query android.widget.Button
+query (android.widget.Button)
+query ("android.widget.Button")
+exit
